@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description" content="MİHENK PREMIUM dijital VIP üyelik kartı.">
+
+  <title>VIP Üyelik Kartı | MİHENK PREMIUM</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black: #0b0b0b;
+      --gold: #d8bc7a;
+      --gold-light: #f4e5bd;
+      --gold-muted: #a99a79;
+      --border: #806b40;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 28px 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(ellipse at 50% 25%, #292215 0%, transparent 55%),
+        var(--black);
+      color: #fff;
+      font-family: "DM Sans", sans-serif;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 460px;
+    }
+
+    .brand {
+      margin-bottom: 28px;
+      text-align: center;
+    }
+
+    .brand-name {
+      color: var(--gold);
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      letter-spacing: 5px;
+    }
+
+    .brand-subtitle {
+      margin-top: 5px;
+      color: var(--gold-muted);
+      font-size: 10px;
+      letter-spacing: 6px;
+    }
+
+    .membership-card {
+      position: relative;
+      overflow: hidden;
+      padding: 27px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background:
+        radial-gradient(ellipse at 50% 45%, #292317 0%, transparent 65%),
+        linear-gradient(145deg, #191919, #090909 75%);
+      box-shadow: 0 24px 70px #0009, 0 0 30px #d8bc7a0b;
+    }
+
+    .membership-card::before {
+      position: absolute;
+      top: -95px;
+      right: -95px;
+      width: 200px;
+      height: 200px;
+      border: 1px solid #d8bc7a1a;
+      border-radius: 50%;
+      content: "";
+      pointer-events: none;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .card-logo {
+      color: var(--gold);
+      font-family: "Playfair Display", serif;
+      font-size: 25px;
+      letter-spacing: 4px;
+    }
+
+    .card-logo-sub {
+      margin-top: 4px;
+      color: var(--gold-muted);
+      font-size: 8px;
+      letter-spacing: 4px;
+    }
+
+    .crown {
+      color: var(--gold);
+      font-size: 30px;
+    }
+
+    .gold-line {
+      height: 1px;
+      margin: 24px 0;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+    }
+
+    .emblem {
+      display: flex;
+      width: 92px;
+      height: 92px;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+      border: 1px solid #a9894870;
+      border-radius: 50%;
+      color: var(--gold-light);
+      font-family: "Playfair Display", serif;
+      font-size: 47px;
+      box-shadow: inset 0 0 25px #d8bc7a0a;
+    }
+
+    .membership-label {
+      color: var(--gold-light);
+      font-family: "Playfair Display", serif;
+      font-size: 22px;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    .membership-description {
+      margin-top: 9px;
+      color: var(--gold-muted);
+      font-size: 9px;
+      letter-spacing: 3px;
+      text-align: center;
+    }
+
+    .number-section {
+      margin-top: 30px;
+    }
+
+    .number-label {
+      margin-bottom: 9px;
+      color: var(--gold-muted);
+      font-size: 9px;
+      letter-spacing: 2px;
+    }
+
+    .membership-number {
+      color: var(--gold-light);
+      font-size: clamp(18px, 5vw, 23px);
+      font-weight: 600;
+      letter-spacing: 2px;
+      overflow-wrap: anywhere;
+    }
+
+    .card-bottom {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .tagline {
+      color: var(--gold-muted);
+      font-size: 9px;
+      line-height: 1.8;
+      letter-spacing: 1px;
+    }
+
+    .qr-placeholder {
+      display: grid;
+      width: 58px;
+      height: 58px;
+      flex-shrink: 0;
+      place-items: center;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      background: #f4e5bd;
+      color: #17130b;
+      font-size: 32px;
+    }
+
+    .notice {
+      margin-top: 23px;
+      color: #8f846b;
+      font-size: 11px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .footer {
+      margin-top: 30px;
+      color: #746b59;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    @media (max-width: 380px) {
+      .membership-card {
+        padding: 21px;
+      }
+
+      .membership-number {
+        letter-spacing: 1px;
+      }
+
+      .membership-label {
+        font-size: 19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <header class="brand">
+      <h1 class="brand-name">MİHENK</h1>
+      <p class="brand-subtitle">P R E M I U M</p>
+    </header>
+
+    <section class="membership-card" aria-label="Dijital VIP üyelik kartı">
+      <div class="card-top">
+        <div>
+          <div class="card-logo">MİHENK</div>
+          <div class="card-logo-sub">P R E M I U M</div>
+        </div>
+        <div class="crown" aria-hidden="true">♛</div>
+      </div>
+
+      <div class="gold-line"></div>
+
+      <div class="emblem" aria-hidden="true">M</div>
+
+      <h2 class="membership-label">VIP ÜYELİK</h2>
+      <p class="membership-description">ÖZEL AYRICALIKLAR</p>
+
+      <div class="number-section">
+        <p class="number-label">ÜYELİK NUMARASI</p>
+        <p class="membership-number">MH-X7K9-P2Q8-R4</p>
+      </div>
+
+      <div class="card-bottom">
+        <p class="tagline">SENIN DÜNYAN.<br>SENİN AYRICALIĞIN.</p>
+
+        <div class="qr-placeholder" aria-label="QR kod daha sonra eklenecek">
+          <span aria-hidden="true">▦</span>
+        </div>
+      </div>
+    </section>
+
+    <p class="notice">
+      MİHENK PREMIUM dijital üyelik kartı tasarımı.<br>
+      QR kod, web sitesi yayınlandıktan sonra eklenecektir.
+    </p>
+
+    <footer class="footer">
+      MİHENK PREMIUM · SEÇKİN KADINLAR KULÜBÜ
+    </footer>
+  </main>
+</body>
+</html>

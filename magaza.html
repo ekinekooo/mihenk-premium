@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="MİHENK PREMIUM ürün kataloğunu ve özel fırsatlarını keşfedin.">
+  <title>Mağaza | MİHENK PREMIUM</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mainNav" type="button">
+    <span></span><span></span><span></span>
+  </button>
+
+  <a class="logo" href="index.html">
+    <span class="logo-main">MİHENK</span>
+    <span class="logo-sub">P R E M I U M</span>
+  </a>
+
+  <nav class="main-nav" id="mainNav">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="anlasmali-noktalar.html">Anlaşmalı Noktalar</a>
+    <a href="magaza.html" aria-current="page">Mağaza</a>
+    <a href="etkinlikler.html">Etkinlikler</a>
+    <a href="sss.html">SSS</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+
+  <a class="button button-gold header-cta" href="iletisim.html">VIP ÜYE OL</a>
+</header>
+
+<main>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <p class="eyebrow">MİHENK PREMIUM SELECT</p>
+    <h1>Seçkin Fırsatlar, <span>Özenle Seçildi.</span></h1>
+    <p>
+      Güzellik, bakım, yaşam ve alışveriş kategorilerindeki ürünleri
+      ve fırsatları tek bir yerde keşfedin.
+    </p>
+
+    <div class="breadcrumbs">
+      <a href="index.html">Ana Sayfa</a>
+      <span>/</span>
+      <span>Mağaza</span>
+    </div>
+  </section>
+
+  <!-- STORE INTRO -->
+  <section class="section-pad">
+    <div class="store-welcome">
+      <div>
+        <p class="eyebrow">THE PREMIUM COLLECTION</p>
+        <h2>Size Özel Seçimler, <span>Yeni Keşifler.</span></h2>
+        <p>
+          MİHENK PREMIUM mağazası, ürünleri ve fırsatları kolayca
+          keşfedebilmeniz için tasarlanmış bir katalog alanıdır.
+          Yeni ürünler ve kampanyalar doğrulandıkça burada yayımlanacaktır.
+        </p>
+      </div>
+
+      <div class="store-welcome-mark">
+        <span>M.</span>
+        <p>CURATED FOR YOU</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEARCH AND FILTERS -->
+  <section class="store-catalog section-pad" id="urunler">
+
+    <div class="catalog-heading">
+      <div>
+        <p class="eyebrow">CATALOGUE</p>
+        <h2>Mağaza <span>Kataloğu.</span></h2>
+      </div>
+
+      <label class="store-search">
+        <span aria-hidden="true">⌕</span>
+        <input
+          type="search"
+          id="productSearch"
+          placeholder="Ürün veya fırsat ara..."
+          aria-label="Ürün veya fırsat ara"
+        >
+      </label>
+    </div>
+
+    <div class="store-filters" role="group" aria-label="Ürün kategorileri">
+      <button class="filter-button active" type="button" data-filter="all">Tümü</button>
+      <button class="filter-button" type="button" data-filter="beauty">Güzellik & Bakım</button>
+      <button class="filter-button" type="button" data-filter="shopping">Alışveriş</button>
+      <button class="filter-button" type="button" data-filter="lifestyle">Yaşam</button>
+      <button class="filter-button" type="button" data-filter="events">Etkinlikler</button>
+    </div>
+
+    <div class="catalog-grid" id="catalogGrid">
+
+      <article class="catalog-card" data-category="beauty" data-search="güzellik bakım salon cilt">
+        <div class="catalog-image catalog-image-beauty">
+          <span class="catalog-tag">GÜZELLİK & BAKIM</span>
+          <span class="catalog-art">✿</span>
+          <span class="catalog-number">01</span>
+        </div>
+        <div class="catalog-info">
+          <p class="catalog-category">BEAUTY EDIT</p>
+          <h3>Güzellik & Bakım Fırsatları</h3>
+          <p>Güzellik salonları ve bakım hizmetleri için fırsatları keşfedin.</p>
+          <a class="text-link" href="anlasmali-noktalar.html">Fırsatları incele ↗</a>
+        </div>
+      </article>
+
+      <article class="catalog-card" data-category="shopping" data-search="aksesuar moda takı alışveriş">
+        <div class="catalog-image catalog-image-shopping">
+          <span class="catalog-tag">ALIŞVERİŞ</span>
+          <span class="catalog-art">◇</span>
+          <span class="catalog-number">02</span>
+        </div>
+        <div class="catalog-info">
+          <p class="catalog-category">STYLE COLLECTION</p>
+          <h3>Moda & Aksesuar</h3>
+          <p>Moda, takı ve aksesuar alanındaki seçili fırsatlar.</p>
+          <a class="text-link" href="anlasmali-noktalar.html">Kategoriyi keşfet ↗</a>
+        </div>
+      </article>
+
+      <article class="catalog-card" data-category="beauty" data-search="kişisel bakım wellness güzellik">
+        <div class="catalog-image catalog-image-wellness">
+          <span class="catalog-tag">KİŞİSEL BAKIM</span>
+          <span class="catalog-art">☼</span>
+          <span class="catalog-number">03</span>
+        </div>
+        <div class="catalog-info">
+          <p class="catalog-category">SELF CARE</p>
+          <h3>Kendine Zaman Ayır</h3>
+          <p>Kişisel bakım ve iyi yaşam kategorisindeki fırsatlar.</p>
+          <a class="text-link" href="anlasmali-noktalar.html">Detayları gör ↗</a>
+        </div>
+      </article>
+
+      <article class="catalog-card" data-category="lifestyle" data-search="restoran kafe yemek içecek">
+        <div class="catalog-image catalog-image-dining">
+          <span class="catalog-tag">YEME & İÇME</span>
+          <span class="catalog-art">♧</span>
+          <span class="catalog-number">04</span>
+        </div>
+        <div class="catalog-info">
+          <p class="catalog-category">DINING EXPERIENCES</p>
+          <h3>Yeme & İçme Deneyimleri</h3>
+          <p>Kafe, restoran ve sosyal yaşam fırsatlarını keşfedin.</p>
+          <a class="text-link" href="anlasmali-noktalar.html">Detayları gör ↗</a>
+        </div>
+      </article>
+
+      <article class="catalog-card" data-category="events" data-search="kadınlar matinesi canlı müzik etkinlik eğlence">
+        <div class="catalog-image catalog-image-events">
+          <span class="catalog-tag">ETKİNLİKLER</span>
+          <span class="catalog-art">♫</span>
+          <span class="catalog-number">05</span>
+        </div>
+        <div class="catalog-info">
+          <p class="catalog-category">EXCLUSIVE EVENTS</p>
+          <h3>Kadınlar Matinesi</h3>
+          <p>Canlı müzik, sosyal buluşmalar ve özel organizasyonlar.</p>
+          <a class="text-link" href="etkinlikler.html">Etkinlikleri keşfet ↗</a>
+        </div>
+      </article>
+
+      <article class="catalog-card" data-category="lifestyle" data-search="özel deneyim sürpriz hediye kampanya">
+        <div class="catalog-image catalog-image-exclusive">
+          <span class="catalog-tag">ÖZEL SEÇKİ</span>
+          <span class="catalog-art">✧</span>
+          <span class="catalog-number">06</span>
+        </div>
+        <div class="catalog-info">
+          <p class="catalog-category">MIHENK SELECT</p>
+          <h3>Özel Fırsatlar</h3>
+          <p>Üyelere yönelik kampanya ve fırsat duyuruları.</p>
+          <a class="text-link" href="iletisim.html">Bilgi al ↗</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="catalog-empty" id="catalogEmpty" hidden>
+      <span>⌕</span>
+      <h3>Sonuç Bulunamadı</h3>
+      <p>Aramanızı veya seçtiğiniz kategoriyi değiştirmeyi deneyin.</p>
+      <button class="button button-outline" id="resetFilters" type="button">Filtreleri Temizle</button>
+    </div>
+
+    <p class="section-note">
+      Bu sayfa başlangıç kataloğudur. Gerçek ürünler, fiyatlar, kampanyalar
+      ve stok bilgileri kesinleştiğinde eklenecektir.
+    </p>
+  </section>
+
+  <!-- MEMBER BENEFIT -->
+  <section class="store-benefit section-pad">
+    <div class="store-benefit-content">
+      <p class="eyebrow">MİHENK PREMIUM PRIVILEGES</p>
+      <h2>Fırsatları Keşfedin, <span>Ayrıcalığınızı Yaşayın.</span></h2>
+      <p>
+        Üyelik ve anlaşmalı işletmelerdeki güncel fırsatlar hakkında
+        daha fazla bilgi almak için bizimle iletişime geçin.
+      </p>
+      <a class="button button-gold" href="iletisim.html">BİLGİ AL ↗</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <a class="logo" href="index.html">
+    <span class="logo-main">MİHENK</span>
+    <span class="logo-sub">P R E M I U M</span>
+  </a>
+
+  <p>Kalitenin, Güvenin ve Eğlencenin Yeni Standardı.</p>
+
+  <div class="footer-links">
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="sss.html">SSS</a>
+    <a href="iletisim.html">İletişim</a>
+  </div>
+
+  <p class="copyright">© 2026 MİHENK PREMIUM. Tüm hakları saklıdır.</p>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const mainNav = document.getElementById("mainNav");
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("is-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "Menüyü kapat" : "Menüyü aç");
+  });
+
+  mainNav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("is-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Menüyü aç");
+    });
+  });
+
+  document.addEventListener("click", event => {
+    if (!mainNav.contains(event.target) && !menuToggle.contains(event.target)) {
+      mainNav.classList.remove("is-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Menüyü aç");
+    }
+  });
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+      mainNav.classList.remove("is-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Menüyü aç");
+      menuToggle.focus();
+    }
+  });
+
+  const searchInput = document.getElementById("productSearch");
+  const filterButtons = document.querySelectorAll(".filter-button");
+  const catalogCards = document.querySelectorAll(".catalog-card");
+  const catalogEmpty = document.getElementById("catalogEmpty");
+  const resetFilters = document.getElementById("resetFilters");
+
+  let activeFilter = "all";
+
+  function filterCatalog() {
+    const searchTerm = searchInput.value.trim().toLocaleLowerCase("tr-TR");
+    let visibleCount = 0;
+
+    catalogCards.forEach(card => {
+      const category = card.dataset.category;
+      const searchableText = (
+        card.dataset.search + " " + card.innerText
+      ).toLocaleLowerCase("tr-TR");
+
+      const matchesCategory =
+        activeFilter === "all" || category === activeFilter;
+
+      const matchesSearch = searchableText.includes(searchTerm);
+      const visible = matchesCategory && matchesSearch;
+
+      card.hidden = !visible;
+
+      if (visible) visibleCount++;
+    });
+
+    catalogEmpty.hidden = visibleCount !== 0;
+  }
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      activeFilter = button.dataset.filter;
+
+      filterButtons.forEach(item => {
+        const isActive = item === button;
+        item.classList.toggle("active", isActive);
+        item.setAttribute("aria-pressed", String(isActive));
+      });
+
+      filterCatalog();
+    });
+  });
+
+  searchInput.addEventListener("input", filterCatalog);
+
+  resetFilters.addEventListener("click", () => {
+    activeFilter = "all";
+    searchInput.value = "";
+
+    filterButtons.forEach(button => {
+      const isActive = button.dataset.filter === "all";
+      button.classList.toggle("active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+
+    filterCatalog();
+  });
+
+  filterButtons.forEach(button => {
+    button.setAttribute(
+      "aria-pressed",
+      String(button.dataset.filter === "all")
+    );
+  });
+</script>
+
+</body>
+</html>
