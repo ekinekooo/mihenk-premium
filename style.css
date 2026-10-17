@@ -16,8 +16,8 @@
   --text: #f5f0e6;
   --muted: #b8afa0;
   --border: #352d20;
-  --heading: "Playfair Display", Georgia, serif;
-  --body: "DM Sans", Arial, sans-serif;
+  --heading: Georgia, "Times New Roman", serif;
+--body: Arial, Helvetica, sans-serif;
   --page-padding: 7.8%;
   --transition: 0.25s ease;
 }
